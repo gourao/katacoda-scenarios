@@ -12,13 +12,15 @@
       "client": [
         {
           "file": "adddisk.sh",
-          "target": "/usr/bin"
+          "target": "/root",
+          "chmod": "+x"
         }
       ],
       "host01": [
         {
           "file": "adddisk.sh",
-          "target": "/usr/bin"
+          "target": "/root",
+          "chmod": "+x"
         }
       ]
     },

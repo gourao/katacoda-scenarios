@@ -1,2 +1,2 @@
 #!/bin/bash -xe
-adddisk.sh
+/root/adddisk.sh
