@@ -14,6 +14,12 @@
           "file": "adddisk.sh",
           "target": "/usr/bin"
         }
+      ],
+      "host01": [
+        {
+          "file": "adddisk.sh",
+          "target": "/usr/bin"
+        }
       ]
     },
     "intro": {
