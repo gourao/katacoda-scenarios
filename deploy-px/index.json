@@ -8,6 +8,14 @@
       "title": "Step 1 - Install Portworx",
       "text": "step1.md"
     }],
+	"assets": {
+      "client": [
+        {
+          "file": "adddisk.sh",
+          "target": "/usr/bin"
+        }
+      ],
+    },
     "intro": {
       "text": "intro.md",
 	  "courseData": "courseBase.sh",
