@@ -1,10 +1,3 @@
-# Interactive Katacoda Scenarios
+# Deploy a 3 node Portworx Cluster
 
-[![](http://shields.katacoda.com/katacoda/portworx/count.svg)](https://www.katacoda.com/portworx "Get your profile on Katacoda.com")
-
-Visit https://www.katacoda.com/portworx to view the profile and interactive scenarios
-
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
-
-For examples, visit https://github.com/katacoda/scenario-example
+Visit http://docs.portworx.com for more documentation on installing and running Portworx.
