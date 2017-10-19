@@ -1,7 +1,10 @@
-This is your first step.
+In this step, you will install Portworx on 3 seperate hosts and configure a 3 node Portworx cluster.
 
-## Task
+## Install the OCI bundle
 
-This is an _example_ of creating a scenario and running a **command**
+Portworx runs as an OCI runC container.  You can install the bundle by running the following **command**
 
-`echo 'Hello World'`{{execute}}
+`sudo docker run --entrypoint /runc-entry-point.sh \
+   --rm -i --privileged=true \
+   -v /opt/pwx:/opt/pwx -v /etc/pwx:/etc/pwx \
+   portworx/px-enterprise:1.2.11-rc8`{{execute}}
