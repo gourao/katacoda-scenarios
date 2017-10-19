@@ -2,14 +2,15 @@
   "title": "Deploy Portworx",
   "description": "Install Portworx",
   "difficulty": "intermediate",
-  "time": "5 minutes",
+  "time": "7 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Install Portworx",
       "text": "step1.md"
     }],
     "intro": {
       "text": "intro.md",
+	  "courseData": "init.sh",
       "credits": ""
     },
     "finish": {
@@ -18,7 +19,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nInstall the Portworx runC container image using the instructions on the left.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ubuntu"
