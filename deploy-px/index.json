@@ -14,22 +14,6 @@
 	  "code": "adddisk.sh",
       "credits": ""
     },
-	"assets": {
-      "client": [
-        {
-          "file": "adddisk.sh",
-          "target": "/root",
-          "chmod": "+x"
-        }
-      ],
-      "host01": [
-        {
-          "file": "adddisk.sh",
-          "target": "/root",
-          "chmod": "+x"
-        }
-      ]
-    },
     "finish": {
       "text": "finish.md"
     }
