@@ -14,7 +14,7 @@
           "file": "adddisk.sh",
           "target": "/usr/bin"
         }
-      ],
+      ]
     },
     "intro": {
       "text": "intro.md",
