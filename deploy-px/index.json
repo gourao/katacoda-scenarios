@@ -2,7 +2,7 @@
   "title": "Deploy Portworx",
   "description": "Install Portworx",
   "difficulty": "intermediate",
-  "time": "7 minutes",
+  "time": "10 - 15 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Install etcd",

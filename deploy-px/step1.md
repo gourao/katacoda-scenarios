@@ -1,12 +1,14 @@
 In this step, you will install Portworx on 3 seperate hosts and configure a 3 node Portworx cluster.
 
-## Install etcd
-Portworx relies on an external key value database (KVDB) like `etcd` or `consul` to store it's cluster discovery and bootstrap information.
+## Prepare the hosts
+Portworx (PX) requires at least some nodes in the cluster to have dedicated storage for Portworx to use.  PX will then carve out virtual volumes from these storage pools.  In this example, we use a loopback device to provide a local storage pool to each PX instance.  As you can see on the right, a 64GB loopback device has already been provisioned on these hosts.
+
+In addition, PX relies on an external key value database (KVDB) like `etcd` or `consul` to store it's cluster discovery and bootstrap information.
 
 >**Note:**<br/>In a production environment, please deploy a multi node etcd cluster following these instructions: https://coreos.com/etcd 
 
 ### Task
-Run etcd in Docker.
+Create an etcd instance via Docker.
 
 `IP=$(hostname -I | awk '{print $1}') &&\
   docker run\
@@ -22,3 +24,4 @@ Run etcd in Docker.
 ### Note the IP address of this host
 `echo $IP`{{execute}}
 
+We will use this IP address when we start PX.
