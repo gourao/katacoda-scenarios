@@ -15,6 +15,7 @@ Create an etcd instance via Docker.
 
 `IP=$(hostname -I | awk '{print $1}') && \
   docker run \
+  -d \
   --net=host \
   -p 2379:2379 \
   --volume=/var/lib/etcd:/etcd-data \
@@ -24,6 +25,9 @@ Create an etcd instance via Docker.
   --advertise-client-urls http://${IP}:2379 \
   --listen-client-urls http://${IP}:2379 \
   --initial-cluster node1=http://${IP}:2380`{{execute}}
+
+Verify that etcd is functional:
+`curl -X GET http://${IP}/version`{{execute}}
 
 ### Note the IP address of this host
 `echo $IP`{{execute}}
