@@ -1,8 +1,10 @@
 In this step, you will install Portworx on 3 seperate hosts and configure a 3 node Portworx cluster.
 
 ## Install the OCI bundle
+Portworx runs as an OCI runC container.  In order to run Portworx, you must first install the OCI bundle.  The OCI bundle is distributed as a Docker image.
 
-Portworx runs as an OCI runC container.  You can install the bundle by running the following **command**
+### Task
+You can install the bundle by running the following **command**
 
 `sudo docker run --entrypoint \
    /runc-entry-point.sh \
