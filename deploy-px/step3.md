@@ -14,6 +14,13 @@ Start PX using the loopback device and the etcd from step1 by executing this **c
   -s /dev/loop18`{{execute}}
 
 ### Task
+Enable the PX service
+
+`sudo systemctl daemon-reload
+ sudo systemctl enable portworx
+ sudo systemctl start portworx`{{execute}}
+
+### Task
 Wait for PX to initialize.  This usually takes a few seconds.  When PX is running, the CLI, REST endpoint and it's integration with Docker and Kubernetes are immediately available on the host.  The CLI is accessible at `/opt/pwx/bin`.
 
 Run this **command** to verify that PX is operational.
