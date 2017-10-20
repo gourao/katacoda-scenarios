@@ -2,6 +2,8 @@ Portworx is distributed file, block and object storage software purpose built fo
 
 In this tutorial, you will:
 
+Ha
+
 1. Learn how to deploy a basic 3 node Portworx Cluster.
 2. Launch a `mysql` database and dynamically create a highly available PX volume.
 3. Simulate a failover of a node and demonstrate high availability of the `mysql` database.
