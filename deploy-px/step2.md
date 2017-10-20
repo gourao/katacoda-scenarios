@@ -1,7 +1,9 @@
-In this step, you will install Portworx on 3 seperate hosts and configure a 3 node Portworx cluster.
+In this step, you will install the PX OCI bundle on 3 seperate hosts.
 
 ## Install the OCI bundle
-Portworx runs as an OCI runC container.  In order to run Portworx, you must first install the OCI bundle.  The OCI bundle is distributed as a Docker image.
+PX runs as an OCI runC container.  In order to run PX, you must first install the OCI bundle.  The OCI bundle is distributed as a Docker image.
+
+>**Note:**<br/>The documentation for this task are here: https://docs.portworx.com/runc/#install-the-px-oci-bundle
 
 ### Task
 You can install the bundle by running the following **command**
